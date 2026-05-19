@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealBite — Dhaka Food Delivery Deals Compared</title>
+    <meta name="description" content="Compare delivery fees, BOGO deals, and promo codes across foodpanda, Pathao Food & Foodi in Dhaka. Find the cheapest food delivery option instantly.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ambient Glow Background -->
+    <div class="ambient-bg">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand">
+                <div class="brand-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span>Deal<span class="brand-accent">Bite</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#platforms" class="nav-link" data-section="platforms">Platforms</a>
+                <a href="#deals" class="nav-link" data-section="deals">Deals</a>
+                <a href="#promos" class="nav-link" data-section="promos">Promos</a>
+                <a href="#calculator" class="nav-link" data-section="calculator">Calculator</a>
+                <a href="#report" class="nav-link" data-section="report">Report Deal</a>
+            </div>
+            <div class="nav-right">
+                <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="pulse-dot"></span>
+                    Live Deals — Updated May 2026
+                </div>
+                <h1 class="hero-title">
+                    Save Big on Every
+                    <span class="hero-highlight">Food Order</span>
+                    in Dhaka
+                </h1>
+                <p class="hero-desc">
+                    Compare real-time delivery fees, exclusive BOGO deals, and verified promo codes across <strong>foodpanda</strong>, <strong>Pathao Food</strong> & <strong>Foodi</strong>. Never overpay again.
+                </p>
+                <div class="hero-actions">
+                    <a href="#calculator" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="16" y2="18"/></svg>
+                        Price Calculator
+                    </a>
+                    <a href="#deals" class="btn btn-outline">Browse Deals</a>
+                </div>
+                <div class="hero-metrics">
+                    <div class="metric">
+                        <span class="metric-num" data-target="15">0</span>
+                        <span class="metric-label">Active Deals</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric">
+                        <span class="metric-num" data-target="14">0</span>
+                        <span class="metric-label">Promo Codes</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric">
+                        <span class="metric-num" data-target="40">0</span><span class="metric-suffix">%</span>
+                        <span class="metric-label">Max Savings</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cards">
+                <div class="float-card fc1">
+                    <div class="fc-icon">🍗</div>
+                    <div class="fc-info">
+                        <div class="fc-name">Kacchi BOGO</div>
+                        <div class="fc-platform">foodpanda</div>
+                    </div>
+                    <div class="fc-tag fc-free">FREE</div>
+                </div>
+                <div class="float-card fc2">
+                    <div class="fc-icon">🍔</div>
+                    <div class="fc-info">
+                        <div class="fc-name">Burger Deal</div>
+                        <div class="fc-platform">Pathao Food</div>
+                    </div>
+                    <div class="fc-tag fc-off">-50%</div>
+                </div>
+                <div class="float-card fc3">
+                    <div class="fc-icon">🛵</div>
+                    <div class="fc-info">
+                        <div class="fc-name">Free Delivery</div>
+                        <div class="fc-platform">Foodi</div>
+                    </div>
+                    <div class="fc-tag fc-free">৳0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Comparison -->
+    <section class="section" id="platforms">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag">Compare Platforms</div>
+                <h2 class="sec-title">Delivery Fee <span class="text-grad">Breakdown</span></h2>
+                <p class="sec-desc">Side-by-side comparison of Dhaka's top food delivery platforms</p>
+            </div>
+            <div class="platform-grid" id="platformGrid">
+                <!-- Loaded from API -->
+                <div class="skeleton-grid">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="section section-alt" id="deals">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag">🔥 Hot Deals</div>
+                <h2 class="sec-title">BOGO & <span class="text-grad">Discount Deals</span></h2>
+                <p class="sec-desc">Verified deals on Kacchi Biryani, Burgers, Pizza & more</p>
+            </div>
+            <div class="filters-bar">
+                <div class="filter-group" id="dealFilters">
+                    <button class="chip active" data-filter="all">All</button>
+                    <button class="chip" data-filter="bogo">BOGO</button>
+                    <button class="chip" data-filter="flat">Flat Off</button>
+                    <button class="chip" data-filter="freedelivery">Free Delivery</button>
+                    <button class="chip" data-filter="combo">Combos</button>
+                </div>
+                <div class="filter-group">
+                    <button class="chip chip-outline" data-platform="all">All Platforms</button>
+                    <button class="chip chip-outline" data-platform="foodpanda">🐼 foodpanda</button>
+                    <button class="chip chip-outline" data-platform="pathao">🏍️ Pathao</button>
+                    <button class="chip chip-outline" data-platform="foodi">🍕 Foodi</button>
+                </div>
+                <div class="search-wrap">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" id="dealSearch" class="search-input" placeholder="Search deals...">
+                </div>
+            </div>
+            <div class="deals-grid" id="dealsGrid">
+                <div class="skeleton-grid">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+            </div>
+            <div class="deals-count" id="dealsCount"></div>
+        </div>
+    </section>
+
+    <!-- Promo Codes -->
+    <section class="section" id="promos">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag">🎟️ Verified Codes</div>
+                <h2 class="sec-title">Active <span class="text-grad">Promo Codes</span></h2>
+                <p class="sec-desc">Click to copy — verified for May 2026</p>
+            </div>
+            <div class="promo-filters" id="promoFilters">
+                <button class="chip active" data-pf="all">All</button>
+                <button class="chip" data-pf="foodpanda">🐼 foodpanda</button>
+                <button class="chip" data-pf="pathao">🏍️ Pathao</button>
+                <button class="chip" data-pf="foodi">🍕 Foodi</button>
+            </div>
+            <div class="promo-grid" id="promoGrid">
+                <div class="skeleton-grid">
+                    <div class="skeleton-card sh"></div>
+                    <div class="skeleton-card sh"></div>
+                    <div class="skeleton-card sh"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="section section-alt" id="calculator">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag">🧮 Smart Compare</div>
+                <h2 class="sec-title">Price <span class="text-grad">Calculator</span></h2>
+                <p class="sec-desc">Enter your order details — see which platform is cheapest</p>
+            </div>
+            <div class="calc-layout">
+                <div class="calc-panel">
+                    <h3 class="panel-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+                        Order Details
+                    </h3>
+                    <div class="field">
+                        <label for="calcFood">Food Item</label>
+                        <select id="calcFood" class="input">
+                            <option value="350" data-name="Kacchi Biryani (1 person)">🍗 Kacchi Biryani (1p) — ৳350</option>
+                            <option value="900" data-name="Kacchi Biryani (Family)">🍗 Kacchi Family Pack — ৳900</option>
+                            <option value="250" data-name="Premium Burger">🍔 Premium Burger — ৳250</option>
+                            <option value="450" data-name="Burger Combo">🍔 Burger Combo — ৳450</option>
+                            <option value="550" data-name="Large Pizza">🍕 Large Pizza — ৳550</option>
+                            <option value="380" data-name="Fried Chicken (8pc)">🍗 Fried Chicken 8pc — ৳380</option>
+                            <option value="320" data-name="Pasta">🍝 Pasta — ৳320</option>
+                            <option value="custom" data-name="Custom">✏️ Custom Amount</option>
+                        </select>
+                    </div>
+                    <div class="field" id="customField" style="display:none">
+                        <label for="calcCustom">Custom Price (৳)</label>
+                        <input type="number" id="calcCustom" class="input" placeholder="Enter amount" min="1">
+                    </div>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="calcQty">Quantity</label>
+                            <input type="number" id="calcQty" class="input" value="1" min="1" max="20">
+                        </div>
+                        <div class="field">
+                            <label for="calcDist">Distance</label>
+                            <select id="calcDist" class="input">
+                                <option value="near">Nearby (0-3 km)</option>
+                                <option value="mid" selected>Medium (3-6 km)</option>
+                                <option value="far">Far (6+ km)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="calcPromo">Apply Promo</label>
+                        <select id="calcPromo" class="input">
+                            <option value="">No Promo</option>
+                            <option value="DEALNAO">DEALNAO (foodpanda – 40% off)</option>
+                            <option value="PATHAO30">PATHAO30 (Pathao – 30% off)</option>
+                            <option value="PTPOINTS">PTPOINTS (Pathao – ৳30 off)</option>
+                            <option value="FOODIGP">FOODIGP (Foodi – ৳60 off + free delivery)</option>
+                            <option value="FOODI20">FOODI20 (Foodi – 20% off)</option>
+                            <option value="bogo">BOGO (Buy 1 Get 1)</option>
+                        </select>
+                    </div>
+                    <label class="check-label">
+                        <input type="checkbox" id="calcPeak">
+                        <span class="checkmark"></span>
+                        <span>⚡ Peak Hour / Bad Weather</span>
+                    </label>
+                    <button class="btn btn-primary btn-block" id="calcBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                        Compare Prices
+                    </button>
+                </div>
+                <div class="calc-results" id="calcResults">
+                    <div class="empty-state">
+                        <div class="empty-icon">📊</div>
+                        <h4>Price Comparison</h4>
+                        <p>Select your order details and hit <strong>"Compare Prices"</strong> to see a full cost breakdown across all platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Report a Deal -->
+    <section class="section" id="report">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag">📢 Community</div>
+                <h2 class="sec-title">Report a <span class="text-grad">New Deal</span></h2>
+                <p class="sec-desc">Found a deal we missed? Share it with the community!</p>
+            </div>
+            <div class="report-form-wrap">
+                <form class="report-form" id="reportForm">
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="repName">Your Name</label>
+                            <input type="text" id="repName" class="input" placeholder="Optional">
+                        </div>
+                        <div class="field">
+                            <label for="repEmail">Email</label>
+                            <input type="email" id="repEmail" class="input" placeholder="Optional">
+                        </div>
+                    </div>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="repPlatform">Platform</label>
+                            <select id="repPlatform" class="input">
+                                <option value="">Select platform</option>
+                                <option value="foodpanda">🐼 foodpanda</option>
+                                <option value="pathao">🏍️ Pathao Food</option>
+                                <option value="foodi">🍕 Foodi</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="repType">Deal Type</label>
+                            <select id="repType" class="input">
+                                <option value="">Select type</option>
+                                <option value="bogo">BOGO</option>
+                                <option value="flat">Flat Discount</option>
+                                <option value="freedelivery">Free Delivery</option>
+                                <option value="combo">Combo Deal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="repTitle">Deal Title *</label>
+                        <input type="text" id="repTitle" class="input" placeholder="e.g. 50% off Kacchi at Sultan's Dine" required>
+                    </div>
+                    <div class="field">
+                        <label for="repDesc">Description *</label>
+                        <textarea id="repDesc" class="input textarea" rows="3" placeholder="Describe the deal, include any promo code, restaurant name, validity..." required></textarea>
+                    </div>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="repCode">Promo Code</label>
+                            <input type="text" id="repCode" class="input" placeholder="If applicable">
+                        </div>
+                        <div class="field">
+                            <label for="repArea">Area</label>
+                            <input type="text" id="repArea" class="input" placeholder="e.g. Dhanmondi, Gulshan">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        Submit Deal Report
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verdict -->
+    <section class="section section-alt" id="verdict">
+        <div class="container">
+            <div class="sec-head">
+                <div class="sec-tag">🏆 The Verdict</div>
+                <h2 class="sec-title">Our <span class="text-grad">Recommendation</span></h2>
+                <p class="sec-desc">Based on current delivery fees, deals, and overall value — May 2026</p>
+            </div>
+            <div class="verdict-grid">
+                <div class="verdict-card vcard-gold">
+                    <div class="vcard-rank">🥇</div>
+                    <div class="vcard-label">Best Overall Value</div>
+                    <div class="vcard-name">Pathao Food</div>
+                    <p>Lowest combined cost with competitive fees, Pathao Points, and bank partner discounts. Best balance of selection and pricing.</p>
+                    <div class="vcard-score">8.5<span>/10</span></div>
+                </div>
+                <div class="verdict-card">
+                    <div class="vcard-rank">🥈</div>
+                    <div class="vcard-label">Cheapest Delivery</div>
+                    <div class="vcard-name">Foodi</div>
+                    <p>Lowest base delivery fees. GP STAR perks give free delivery 5x/month. Best for Grameenphone users.</p>
+                    <div class="vcard-score">8.0<span>/10</span></div>
+                </div>
+                <div class="verdict-card">
+                    <div class="vcard-rank">🥉</div>
+                    <div class="vcard-label">Most Options</div>
+                    <div class="vcard-name">foodpanda</div>
+                    <p>Largest restaurant network and most BOGO deals. Higher base cost but frequent promos offset it well.</p>
+                    <div class="vcard-score">7.5<span>/10</span></div>
+                </div>
+            </div>
+            <div class="tips-box">
+                <h3 class="tips-title">💡 Pro Tips to Save More</h3>
+                <div class="tips-grid">
+                    <div class="tip"><div class="tip-icon">📱</div><h4>Compare All 3</h4><p>Check final checkout price on all platforms — menu prices differ for the same restaurant.</p></div>
+                    <div class="tip"><div class="tip-icon">🕐</div><h4>Off-Peak Orders</h4><p>Order 2-5 PM or after 9 PM. Rain adds ৳50-100 extra in surge fees.</p></div>
+                    <div class="tip"><div class="tip-icon">🎟️</div><h4>Stack Discounts</h4><p>Combine restaurant discounts with platform vouchers. Use bank cards for extra cashback.</p></div>
+                    <div class="tip"><div class="tip-icon">⭐</div><h4>Loyalty Points</h4><p>Pathao Points & GP STAR save ৳60-120 per order. Always redeem before ordering.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-brand" style="margin-bottom:12px">
+                        <div class="brand-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/></svg></div>
+                        <span>Deal<span class="brand-accent">Bite</span></span>
+                    </div>
+                    <p>Your Dhaka food delivery companion. Saving money, one meal at a time.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#platforms">Platforms</a>
+                    <a href="#deals">Deals</a>
+                    <a href="#promos">Promos</a>
+                    <a href="#calculator">Calculator</a>
+                    <a href="#report">Report Deal</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Platforms</h4>
+                    <a href="https://www.foodpanda.com.bd" target="_blank" rel="noopener">foodpanda BD</a>
+                    <a href="https://pathao.com" target="_blank" rel="noopener">Pathao Food</a>
+                    <a href="https://foodi.com.bd" target="_blank" rel="noopener">Foodi</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Stats</h4>
+                    <div class="footer-stat" id="footerStats">Loading...</div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 DealBite Dhaka. Not affiliated with any delivery platform. Data updated May 2026.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✅</span>
+        <span class="toast-msg" id="toastMsg"></span>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="totop" id="totop" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
